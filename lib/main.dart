@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      color: kPrimaryColor,
+      theme:theme(),
       debugShowCheckedModeBanner: false,
       home: ShoppingCartPage(),
     );
@@ -40,8 +40,6 @@ class ShoppingCartPage extends StatelessWidget {
 
 AppBar _buildShoppingCartAppBar() {
   return AppBar(
-    foregroundColor: Colors.black,
-    backgroundColor: kPrimaryColor,
     leading: IconButton(
       icon: Icon(Icons.arrow_back),
       onPressed: () {},

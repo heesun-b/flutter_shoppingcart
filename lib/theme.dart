@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_shoppingcart2/constants.dart';
 
-AppBarTheme theme() {
-  return AppBarTheme(
-    backgroundColor: kPrimaryColor,
-    foregroundColor: kPrimaryColor,
+ThemeData theme() {
+  return ThemeData(
+    appBarTheme: AppBarTheme (
+        backgroundColor: kPrimaryColor,
+        foregroundColor: Colors.black
+    ),
+      primaryColor: kPrimaryColor,
+      scaffoldBackgroundColor: kPrimaryColor
   );
 }
